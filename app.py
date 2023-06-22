@@ -12,7 +12,6 @@ import numpy as np
 import cv2
 from flask_cors import CORS,cross_origin
 app = Flask(__name__)
-CORS(app,origins = ["https://even-morefruitsfrontend.vercel.app/"])
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 MODEL_PATH = 'fruits.h5'
 model = load_model(MODEL_PATH)      
